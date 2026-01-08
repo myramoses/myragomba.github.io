@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cybersecurity Portfolio | Myra Moses Gomba</title>
+<style>
+:root {
+  --bg-dark: #0b0f1a;
+  --bg-dark-alt: #11162a;
+  --neon-green: #00ff9c;
+  --neon-blue: #00c8ff;
+  --neon-purple: #a855f7;
+  --neon-cyan: #22d3ee;
+  --text-main: #e5e7eb;
+  --text-muted: #9ca3af;
+  --card-bg: #0f172a;
+}
+* { margin: 0; padding: 0; box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(180deg, var(--bg-dark), var(--bg-dark-alt));
+  color: var(--text-main);
+  line-height: 1.6;
+}
+a { color: var(--neon-cyan); text-decoration: none; transition: all 0.3s ease; }
+a:hover { color: var(--neon-green); text-shadow: 0 0 8px var(--neon-green); }
+h2 { color: var(--neon-blue); margin-bottom: 1.5rem; text-shadow: 0 0 10px rgba(0, 200, 255, 0.4); }
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: rgba(11, 15, 26, 0.85);
+  backdrop-filter: blur(8px);
+  z-index: 1000;
+  border-bottom: 1px solid rgba(255,255,255,0.05);
+}
+nav {
+  max-width: 1200px;
+  margin: auto;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo { color: var(--neon-green); font-weight: 700; text-shadow: 0 0 10px rgba(0,255,156,0.5); }
+.nav-links { display: flex; gap: 1.4rem; flex-wrap: wrap; }
+section { padding: 6rem 2rem; max-width: 1200px; margin: auto; }
+#home { min-height: 100vh; display: flex; flex-direction: column; justify-content: center; gap: 1.5rem; }
+#home h1 { font-size: clamp(2.2rem, 5vw, 3.5rem); color: var(--neon-green); text-shadow: 0 0 15px rgba(0,255,156,0.5); }
+.cta-button { display: inline-block; padding: 0.75rem 1.5rem; border: 1px solid var(--neon-green); border-radius: 6px; color: var(--neon-green); width: fit-content; transition: all 0.3s ease; }
+.cta-button:hover { background: var(--neon-green); color: #020617; box-shadow: 0 0 25px rgba(0,255,156,0.6); }
+#profile { display: grid; grid-template-columns: 180px 1fr; gap: 2rem; align-items: center; }
+.profile-img { width: 180px; height: 180px; border-radius: 50%; object-fit: cover; border: 2px solid var(--neon-purple); box-shadow: 0 0 20px rgba(168,85,247,0.4); }
+.profile-info h3 { color: var(--neon-purple); margin-top: 0.5rem; }
+#about ul { margin-top: 1rem; list-style: none; }
+#about li::before { content: "▸ "; color: var(--neon-cyan); }
+.skills-grid, .projects-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 1.5rem; }
+.skill-card, .project-card, .cert-item, .experience-card { background: var(--card-bg); padding: 1.5rem; border-radius: 10px; border: 1px solid rgba(255,255,255,0.05); transition: transform 0.3s ease, box-shadow 0.3s ease; }
+.skill-card:hover, .project-card:hover, .experience-card:hover { transform: translateY(-5px); box-shadow: 0 0 20px rgba(34,211,238,0.35); }
+.contact-links { display: flex; gap: 1rem; flex-wrap: wrap; margin-top: 1rem; }
+.contact-button { padding: 0.7rem 1.2rem; border: 1px solid var(--neon-purple); border-radius: 6px; color: var(--neon-purple); transition: all 0.3s ease; }
+.contact-button:hover { background: var(--neon-purple); color: #020617; box-shadow: 0 0 20px rgba(168,85,247,0.6); }
+footer { text-align: center; padding: 2rem; font-size: 0.85rem; color: var(--text-muted); }
+@media (max-width: 768px) {
+  #profile { grid-template-columns: 1fr; text-align: center; }
+  .profile-img { margin: auto; }
+}
+</style>
+</head>
+<body>
+
+<header>
+  <nav>
+    <div class="logo">CyberSec Portfolio</div>
+    <div class="nav-links">
+      <a href="#home">Home</a>
+      <a href="#profile">Profile</a>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#experience">Experience</a>
+      <a href="#certifications">Certifications</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </nav>
+</header>
+
+<!-- HERO / HOME -->
+<section id="home">
+  <h1>Securing the Digital Frontier</h1>
+  <p>Cybersecurity Analyst focused on blue team operations, threat detection, incident response, and defending modern infrastructure against evolving cyber threats.</p>
+  <a href="#contact" class="cta-button">Get in Touch</a>
+</section>
+
+<!-- PROFILE -->
+<section id="profile">
+  <img src="profile.jpg" alt="Profile Photo" class="profile-img">
+  <div class="profile-info">
+    <h2>Myra Moses Gomba</h2>
+    <h3>Cybersecurity Analyst | Security Operations | Blue Team | Incident Responder</h3>
+    <p>Entry-level cybersecurity professional with hands-on experience in SOC operations, incident analysis, and security monitoring. Passionate about continuous learning and practical defense strategies.</p>
+  </div>
+</section>
+
+<!-- ABOUT ME -->
+<section id="about">
+  <h2>About Me</h2>
+  <p>
+    I am a Cybersecurity Analyst with hands-on experience in SIEM monitoring, network traffic analysis, and threat detection through lab environments and internship training. Skilled in deploying and analyzing alerts using Security Onion leveraging tools such as Kibana, Sguil, Zeek, and Splunk to investigate suspicious activity, correlate logs, and produce actionable security reports.
+  </p>
+</section>
+
+<!-- SKILLS -->
+<section id="skills">
+  <h2>Skills</h2>
+  <div class="skills-grid">
+    <div class="skill-card">
+      <h3>Networking & Security Fundamentals</h3>
+      <p>TCP/IP, DNS, Firewalls, IDS/IPS, Network Defense</p>
+    </div>
+    <div class="skill-card">
+      <h3>Scripting</h3>
+      <p>Python, Bash, automation basics</p>
+    </div>
+    <div class="skill-card">
+      <h3>Security Tools</h3>
+      <p>Security Onion, Kibana, Sguil, Zeek, Splunk, Wireshark, Nmap</p>
+    </div>
+    <div class="skill-card">
+      <h3>Operating Systems</h3>
+      <p>Linux (Ubuntu, Kali), Windows</p>
+    </div>
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects">
+  <h2>Featured Projects</h2>
+  <div class="projects-grid">
+    <div class="project-card">
+      <h3>Attack Path Mapping Using JIT Agentic Investigation</h3>
+      <p><strong>Tools/Techniques:</strong> JIT agentic investigation, simulated environments</p>
+      <ul>
+        <li>Mapped potential attack paths in simulated environments using JIT agentic investigation techniques</li>
+        <li>Identified critical vulnerabilities and attack vectors to understand threat actor behaviors</li>
+        <li>Developed analytical reports suggesting mitigation strategies</li>
+      </ul>
+    </div>
+    <div class="project-card">
+      <h3>Service Discovery and Port State Analysis Using Nmap</h3>
+      <p><strong>Tools:</strong> Nmap</p>
+      <ul>
+        <li>Conducted network reconnaissance to identify open ports and active services</li>
+        <li>Analyzed results to assess potential security exposures and support vulnerability assessments</li>
+      </ul>
+    </div>
+    <div class="project-card">
+      <h3>SSH Hardening Using Fail2Ban</h3>
+      <p><strong>Tools:</strong> Fail2Ban, Linux</p>
+      <ul>
+        <li>Configured Fail2Ban to protect SSH services against brute-force attacks</li>
+        <li>Implemented ban policies and monitored logs to improve server security posture</li>
+      </ul>
+    </div>
+    <div class="project-card">
+      <h3>Security Monitoring with Splunk</h3>
+      <p><strong>Tools:</strong> Splunk, Linux</p>
+      <ul>
+        <li>Deployed and configured Splunk to analyze the BOTSv3 dataset</li>
+        <li>Conducted security monitoring and threat hunting by writing Splunk queries to detect malicious activities</li>
+        <li>Investigated suspicious events and generated reports</li>
+        <li>Applied SIEM use cases such as event correlation, alerting, and dashboard creation</li>
+        <li>Gained hands-on experience in SOC analyst workflows, log analysis, and incident detection</li>
+      </ul>
+    </div>
+    <div class="project-card">
+      <h3>Security Audit Assessment</h3>
+      <ul>
+        <li>Conducted a mock security audit for a fictional organization, identifying potential vulnerabilities and compliance gaps</li>
+        <li>Analyzed organizational security posture against industry best practices</li>
+        <li>Provided recommendations for improving access control, incident response, and system monitoring</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- EXPERIENCE -->
+<section id="experience">
+  <h2>Experience</h2>
+  <div class="projects-grid">
+    <div class="experience-card">
+      <h3>Cybersecurity Mentee — Dr. Iretioluwa Akerele Mentorship Program (Remote)</h3>
+      <p><strong>October 2025</strong></p>
+      <ul>
+        <li>Participated in an intensive, cohort-based mentorship focused on practical defensive security skills and industry readiness</li>
+        <li>Collaborated with peers to solve cybersecurity challenges and share insights on threat analysis and mitigation</li>
+        <li>Received structured guidance on skill development, career strategies, and professional growth</li>
+        <li>Completed hands-on exercises, problem-solving sessions, and group discussions to strengthen core security competencies</li>
+        <li>Gained exposure to security operations practices, threat monitoring, and collaborative cyber defense techniques</li>
+      </ul>
+    </div>
+    <div class="experience-card">
+      <h3>Deloitte Australia Cyber Job Simulation – Forage</h3>
+      <p><strong>August 2025</strong></p>
+      <ul>
+        <li>Completed a job simulation involving reading web activity logs</li>
+        <li>Supported a client in a cybersecurity breach</li>
+        <li>Answered questions to identify suspicious user activity</li>
+      </ul>
+    </div>
+    <div class="experience-card">
+      <h3>TryHackMe – SOC Simulator (Introduction to Phishing)</h3>
+      <p><strong>June 2025</strong></p>
+      <ul>
+        <li>Monitored and analyzed real-time alerts in a simulated SOC environment</li>
+        <li>Identified and documented phishing events, suspicious attachments, and emails</li>
+        <li>Created detailed incident reports to support alert triage and response</li>
+      </ul>
+    </div>
+    <div class="experience-card">
+      <h3>ANZ Australia Cybersecurity Management Simulation – Forage</h3>
+      <p><strong>June 2025</strong></p>
+      <ul>
+        <li>Investigated phishing emails to identify and report suspicious content</li>
+        <li>Analyzed packet capture files using open-source tools to detect network anomalies</li>
+        <li>Participated in simulated threat reporting and vulnerability assessments</li>
+      </ul>
+    </div>
+    <div class="experience-card">
+      <h3>Mastercard Cybersecurity Virtual Experience – Forage</h3>
+      <p><strong>December 2024</strong></p>
+      <ul>
+        <li>Served as a simulated analyst on the Mastercard Security Awareness Team</li>
+        <li>Identified potential phishing and human risk areas in the business</li>
+        <li>Proposed awareness training programs based on threat insights</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- CERTIFICATIONS -->
+<section id="certifications">
+  <h2>Certifications</h2>
+  <div class="cert-item">ISC2 Certified in Cybersecurity (CC) – 2025</div>
+  <div class="cert-item">Certified Cybersecurity Educator Professional – 2025</div>
+  <div class="cert-item">Cisco CyberOps Associate – 2025</div>
+  <div class="cert-item">Google Cybersecurity Certificate – 2025</div>
+  <div class="cert-item">Cisco Junior Cybersecurity Analyst – 2025</div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <h2>Contact</h2>
+  <div class="contact-links">
+    <a href="mailto:your.email@example.com" class="contact-button">Email</a>
+    <a href="https://github.com/yourusername" class="contact-button">GitHub</a>
+    <a href="https://linkedin.com/in/yourprofile" class="contact-button">LinkedIn</a>
+    <a href="https://medium.com/@yourprofile" class="contact-button">Medium</a>
+  </div>
+</section>
+
+<footer>
+  © 2026 Myra Moses Gomba · Cybersecurity Portfolio
+</footer>
+</body>
+  </html>
