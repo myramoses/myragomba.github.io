@@ -1,7 +1,7 @@
 # Security Monitoring with Splunk – SOC Investigation Project
 
 ## 📌 Project Overview
-This project demonstrates a hands-on Security Operations Center (SOC) investigation using Splunk and the BOTSv3 dataset.  
+This project demonstrates a hands-on **Security Operations Center (SOC) investigation** using **Splunk** and the **BOTSv3 dataset**.  
 The objective was to analyze cloud, endpoint, and network logs to identify misconfigurations, suspicious activity, and potential compromise in Frothly’s environment.
 
 The project mirrors real-world SOC analyst workflows, focusing not just on answers, but on how investigations are approached, validated, and concluded.
@@ -70,7 +70,8 @@ Bstoll
 
 btun
 
-📸 Screenshot: screenshots-iam-users.png
+📸 **IAM Users Accessing AWS Services**
+![IAM Users Accessing AWS Services](screenshots/iam-users.png)
 
 
 Question 2: Processor Number Used on Web Servers
@@ -98,7 +99,9 @@ Finding:
 
 Processor Number: E5-2676 v3
 
-📸 Screenshot:
+📸 **Processor Number Used On Web Server**
+![Processor Number Used On Web Server](screenshots/processor-name.png)
+![Processor Number Used On Web Server](screenshots/web-server.png)
 
 
 Question 3: Event ID That Enabled Public S3 Access
@@ -120,7 +123,8 @@ Finding:
 
 Event ID: ab45689d-69cd-41e7-8705-5350402cf7ac
 
-📸 Screenshot:
+📸 **S3 Public Event Id**
+![S3 Public Event Id](screenshots/eventid-s3-public-access.png)
 
 
 Question 4: Publicly Accessible S3 Bucket Name
@@ -143,7 +147,8 @@ Finding:
 
 Bucket Name: frothlywebcode
 
-📸 Screenshot:
+📸 **S3 Bucket Name**:
+![S3 Bucket Name](screenshots/s3-bucketname.png)
 
 
 Question 5: Text File Uploaded During Public Access
@@ -165,7 +170,8 @@ Finding:
 
 File Name: OPEN_BUCKET_PLEASE_FIX.txt
 
-📸 Screenshot:
+📸 **Text Upload**:
+![Text Upload](screenshots/publicaccess-textfile.png)
 
 
 Question 6: Size of Uploaded .tar.gz File
@@ -189,7 +195,8 @@ Finding:
 
 File Size: 2.93 MB
 
-📸 Screenshot:
+📸 **Targz Size**:
+![Targz Size](screenshots/.tar.gz-filesize.png)
 
 
 Question 7: Endpoint Mining Monero
@@ -211,7 +218,8 @@ Finding:
 
 Short Hostname: BSTOLL-L
 
-📸 Screenshot:
+📸 **Endpoint Mining**:
+![Endpoint Mining](screenshots/endpoint-mining.png)
 
 
 Question 8: Endpoint with Different Windows OS
@@ -236,7 +244,9 @@ Finding:
 
 FQDN: BSTOLL-L.froth.ly
 
-📸 Screenshot:
+📸 **Windows Os**:
+![Windows Os](screenshots/windows-os.png)
+![Windows Os](screenshots/windows-os1.png)
 
 
 📌 Key Takeaways
